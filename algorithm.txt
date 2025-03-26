@@ -17,8 +17,8 @@ C. Multiclass Perceptron algorithm
         1.1. Each label will have a list of weights for each attribute
             1.1.1. e.g. setosa_w = [0.1, 0.2, 0.3, 0.4]
             1.1.2. The weights is respective to [sepal.length, sepal.width, petal.length, petal.width]
-            1.1.3. The initial weights are arbritary and the accurate weights are to be determined later on
-    2. Determine the learning rate (arbritary) and set an "inaccurate" flag to false
+            1.1.3. The initial weights are arbitrary and the accurate weights are to be determined later on
+    2. Determine the learning rate (arbitrary) and set an "inaccurate" flag to false
     3. For each data in the training list, calculate the weighted sum of each class
         3.1. Because there are 3 classes, thus a row would have 3 weighted sums
     4. Compare the sums, the class with the highest sum is the model's output for said row
