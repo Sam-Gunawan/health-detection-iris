@@ -1,0 +1,48 @@
+>>> Predicting sickness based on iris data using Multiclass Perceptron algorithm <<<
+
+A. Storing the data
+    1. Use pandas to read the csv and convert to dataframe
+    2. Get the size (amount of rows) available in the dataset
+    3. Create a list using range() that stores all indexes in the dataset
+    4. Randomly sort the list using shuffle() from random (built-in library)
+
+B. Alogrithm for splitting the data for training and testing
+    1. Create 2 new lists, each storing indexes: one for training, one for testing
+    2. The training list will consist of all_data[0 : a]
+        2.1. where a = train% of size
+    3. The testing list will consist of all_data[a+1 : size]
+        3.1. i.e. the rest of the dataset
+
+C. Multiclass Perceptron algorithm
+    1. Initialize weights for the three classes: Setosa, Versicolor, and Virginica
+        1.1. Each label will have a list of weights for each attribute
+            1.1.1. e.g. setosa_w = [0.1, 0.2, 0.3, 0.4]
+            1.1.2. The weights is respective to [sepal.length, sepal.width, petal.length, petal.width]
+            1.1.3. The initial weights are arbritary and the accurate weights are to be determined later on
+    2. Determine the learning rate (arbritary) and set an "inaccurate" flag to false
+    3. For each data in the training list, calculate the weighted sum of each class
+        3.1. Because there are 3 classes, thus a row would have 3 weighted sums
+    4. Compare the sums, the class with the highest sum is the model's output for said row
+        4.1. If in row 1, the highest weighted sum belongs to class "Setosa", then the predicted output will be "Setosa"
+    5. Test and update weight (if necessary)
+        5.1. If the prediction is correct, do nothing and move on to the next data
+        5.2. If the prediction is wrong...
+            Note:
+            > sl: sepal.length's weight
+            > sw: sepal.width's weight
+            > pl: petal.length's weight
+            > pw: petal.width's weight
+            5.2.1. Set "inaccurate" flag to true
+            5.2.1. Increase weight for expected class using the formula: new_weight = old_weight + learning_rate * ([sl, sw, pl, pw])
+            5.2.2. Decrease weight for predicted class using the formula: new_weight = old_weight - learning_rate * ([sl, sw, pl, pw])
+            5.2.3. The result would be new_weights = [sl_new, sw_new, pl_new, pw_new]
+    6. Keep updating (if needed) weights until all data in training set until the very last data
+    7. Increment the amount of epochs
+    8. Repeat steps 3-7 until the flag remains false after one iteration (aka epoch)
+
+D. Testing the model
+    1. Using the final weights attained from part C, use the multiclass perceptron alogrithm (step 3 and 4) to determine the predicted output for every data in the testing list
+    2. For every correct prediction, increment the counter
+    3. Calculate the accuracy of the testing results
+        2.1. Accuracy: correct predictions / size of testing list
+    
