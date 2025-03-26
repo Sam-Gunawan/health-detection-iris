@@ -3,15 +3,14 @@
 A. Storing the data
     1. Use pandas to read the csv and convert to dataframe
     2. Get the size (amount of rows) available in the dataset
-    3. Create a list using range() that stores all indexes in the dataset
-    4. Randomly sort the list using shuffle() from random (built-in library)
 
 B. Alogrithm for splitting the data for training and testing
-    1. Create 2 new lists, each storing indexes: one for training, one for testing
+    1. Create 2 new dataframes: one for training, one for testing
     2. The training list will consist of all_data[0 : a]
         2.1. where a = train% of size
     3. The testing list will consist of all_data[a+1 : size]
         3.1. i.e. the rest of the dataset
+    4. For 2 and 3, use pandas.DataFrame.sample() method
 
 C. Multiclass Perceptron algorithm
     1. Initialize weights for the three classes: Setosa, Versicolor, and Virginica
