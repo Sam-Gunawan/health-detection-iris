@@ -4,7 +4,7 @@ A. Storing the data
     1. Use pandas to read the csv and convert to dataframe
     2. Get the size (amount of rows) available in the dataset
 
-B. Alogrithm for splitting the data for training and testing
+B. Algorithm for splitting the data for training and testing
     1. Create 2 new dataframes: one for training, one for testing
     2. The training list will consist of all_data[0 : a]
         2.1. where a = train% of size
