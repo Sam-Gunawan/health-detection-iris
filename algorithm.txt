@@ -43,6 +43,7 @@ D. Testing the model
     2. For every correct prediction, increment the counter
     3. Calculate the accuracy of the testing results
         3.1. Accuracy: correct predictions / size of testing list
+    4. Calculate the confusion matrix for the testing results
     
 E. Visualizing the results
     1. Using matplotlib, create a line graph of all accuracies stored
