@@ -1,2 +1,2 @@
-# health-detection-iris
-Detect certain sickness from iris data
+# iris-species-detection
+Detect Iris flower species.
