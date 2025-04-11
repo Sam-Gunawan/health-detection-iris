@@ -2,7 +2,6 @@
 
 A. Storing the data
     1. Use pandas to read the csv and convert to dataframe
-    2. Get the size (amount of rows) available in the dataset
 
 B. Algorithm for splitting the data for training and testing
     1. Create 2 new dataframes: one for training, one for testing
@@ -43,5 +42,10 @@ D. Testing the model
     1. Using the final weights attained from part C, use the multiclass perceptron alogrithm (step 3 and 4) to determine the predicted output for every data in the testing list
     2. For every correct prediction, increment the counter
     3. Calculate the accuracy of the testing results
-        2.1. Accuracy: correct predictions / size of testing list
+        3.1. Accuracy: correct predictions / size of testing list
     
+E. Visualizing the results
+    1. Using matplotlib, create a bar graph of all accuracies stored
+        1.1 x-axis contains the model settings
+        1.2 y-axis contains the accuracy in %
+    2. Display the graph
