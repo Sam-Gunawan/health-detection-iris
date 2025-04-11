@@ -45,7 +45,7 @@ D. Testing the model
         3.1. Accuracy: correct predictions / size of testing list
     
 E. Visualizing the results
-    1. Using matplotlib, create a bar graph of all accuracies stored
+    1. Using matplotlib, create a line graph of all accuracies stored
         1.1 x-axis contains the model settings
         1.2 y-axis contains the accuracy in %
     2. Display the graph
