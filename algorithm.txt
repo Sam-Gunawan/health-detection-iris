@@ -1,4 +1,4 @@
->>> Predicting sickness based on iris data using Multiclass Perceptron algorithm <<<
+>>> Predicting Iris flower species using Multiclass Perceptron algorithm <<<
 
 A. Storing the data
     1. Use pandas to read the csv and convert to dataframe
