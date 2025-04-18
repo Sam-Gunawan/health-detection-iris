@@ -48,20 +48,6 @@ The goal? Predict the correct species of the Iris flower using only these four f
 ├── model.ipynb   # Jupyter notebook containing the full implementation
 └── README.md   # (You are here!)
 ```
-
----
-
-## 👥 Team Members & Roles
-
-| Name                   | Role                          |
-|------------------------|-------------------------------|
-| Samuel T. Gunawan      | Project Manager               |
-| [Priska A. Likarsa](https://github.com/priskaaimee)      | Developer, Data Analyst       |
-| [Jorel A. Setiabudi](https://github.com/jorelalexander)     | Developer, Data Analyst       |
-| [Evan A. Chandra](https://github.com/shifinn)        | Developer, Data Analyst       |
-
-> _Looking to grow the team! If you're interested in machine learning, data visualization, or collaborative coding—reach out!_
-
 ---
 
 ## 🌱 Future Works
